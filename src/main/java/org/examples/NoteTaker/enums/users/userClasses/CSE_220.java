@@ -1,0 +1,21 @@
+package org.examples.NoteTaker.enums.users.userClasses;
+import org.examples.NoteTaker.enums.users.UserPicker;
+
+
+public enum CSE_220 implements IuserClasses {
+ USER_1("Griffin"),
+ USER_GUEST("Guest");
+
+ private final String userName;
+
+ CSE_220(String userName) {
+     this.userName = userName;
+ }
+
+ public String getUserName() {
+     return userName;
+ }
+ public UserPicker getUserClass() {
+  return UserPicker.CSE_220;
+ }
+}
